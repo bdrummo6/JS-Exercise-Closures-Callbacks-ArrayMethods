@@ -298,7 +298,7 @@ function counterMaker() {
  * etc
 */
 function counterMakerWithLimit(max_value) {
-  let count = 0;
+  let count = max_value;
   return function counter() {
     if(count !== max_value) {
       count++;
