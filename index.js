@@ -163,8 +163,14 @@ function processContains(item, list, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree(list, callback) {
+  let arr = [];
+  for(let i = 0; i < list.length; i++) {
+    if(list[i] !== list[i+1]) {
+      arr.push(list[i]);
+    }
+  }
+  return callback(arr);
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
