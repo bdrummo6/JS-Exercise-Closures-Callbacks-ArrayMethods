@@ -198,7 +198,6 @@ function getFullNames(runners) {
 }
 
 
-
 /**
  * ### Challenge `firstNamesAllCaps`
  * 
