@@ -193,7 +193,7 @@ function processDuplicateFree(list, callback) {
 */
 function getFullNames(runners) {
   const fullNames = [];
-  runners.forEach(runner => fullNames.push(runner.last_name + ", " + runner.first_name));
+  runners.forEach(runner => fullNames.push(`${runner.last_name}, ${runner.first_name}`));
   return fullNames;
 }
 
