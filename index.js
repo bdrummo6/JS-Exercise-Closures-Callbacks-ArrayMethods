@@ -254,9 +254,7 @@ function getRunnersByTShirtSize(runners, tShirtSize) {
  * @returns a number which is the sum of the donations by all runners.
  */
 function tallyUpDonations(runners) {
-    const donationList = runners.map((runner) => {
-        return runner.donation;
-    });
+    const donationList = runners.map((runner) => runner.donation);
 
     return donationList.reduce((total, item) => {
         return total += item;
