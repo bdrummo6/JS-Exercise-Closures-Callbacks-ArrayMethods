@@ -258,11 +258,9 @@ function tallyUpDonations(runners) {
         return runner.donation;
     });
 
-    const donations = donationList.reduce((total, item) => {
+    return donationList.reduce((total, item) => {
         return total += item;
     }, 0);
-
-    return donations;
 }
 
 /////////////// CLOSURES ///////////////
