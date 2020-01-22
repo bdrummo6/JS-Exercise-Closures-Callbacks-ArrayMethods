@@ -216,11 +216,9 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
  */
 function firstNamesAllCaps(runners) {
-    const firstNameCaps = runners.map((runner) => {
+    return runners.map((runner) => {
         return runner.first_name.toUpperCase();
     });
-
-    return firstNameCaps;
 }
 /**
  * ### Challenge `getRunnersByTShirtSize`
@@ -236,11 +234,8 @@ function firstNamesAllCaps(runners) {
  * The runners in the array appear in the same order they appear in the `runners` array.
  */
 function getRunnersByTShirtSize(runners, tShirtSize) {
-    return runners.filter((runner) => {
-        return runner.shirt_size === tShirtSize;
-    });
+    return runners.filter((runner) => runner.shirt_size === tShirtSize);
 }
-
 
 /**
  * ### Challenge `tallyUpDonations`
