@@ -236,12 +236,11 @@ function firstNamesAllCaps(runners) {
  * The runners in the array appear in the same order they appear in the `runners` array.
  */
 function getRunnersByTShirtSize(runners, tShirtSize) {
-    const filterTShirtSize = runners.filter((runner) => {
+    return runners.filter((runner) => {
         return runner.shirt_size === tShirtSize;
     });
-
-    return filterTShirtSize;
 }
+
 
 /**
  * ### Challenge `tallyUpDonations`
