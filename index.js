@@ -116,7 +116,8 @@ function processSum(numberList, callback) {
  * should return 1000.
 */
 function processProduct(num1, num2, callback) {
-  return callback(num1*num2);
+  let product = num1 * num2;
+  return callback(product);
 }
 
 /**
